@@ -4,13 +4,14 @@
 	}
 	.col-mobile-12 > h1 {
 		display: flex;
-		text-align: center;
+		text-align: center !important;
 		font-size: 24px;
 	}
 	.col-mobile-12 > p {
 		height: 100%;
 		display: flex;
-		text-align: center;
+		text-align: center !important;
+
 		font-size: 12px;
 	}
 	.slide {
@@ -19,5 +20,17 @@
 	.slide > div img {
 		width: 320px;
 		height: 180px;
+	}
+	.about-us {
+		flex-direction: column;
+	}
+	.about-us > div > h1 img {
+		display: none;
+	}
+	.centr-img > h1 {
+		padding-left: 0 !important;
+	}
+	.col-mobile-12 {
+		justify-content: center !important;
 	}
 }
