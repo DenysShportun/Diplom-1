@@ -1,1 +1,133 @@
-@import "_mobile", "_tablet", "_desktop", "_variables", "mixin";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
+//@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Quattrocento+Sans:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import "_mixin", "_variables", "_mobile", "_tablet", "_desktop";
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: "Roboto", sans-serif;
+}
+header {
+	width: 100%;
+}
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+
+header {
+	.display-flex {
+		margin-left: -8px;
+		margin-right: -8px;
+		height: 80px;
+		align-items: center;
+	}
+}
+.container-1 {
+	max-width: 1440px;
+	margin: 0 auto;
+	display: flex;
+}
+
+.navigation ul {
+	@include display-flex;
+	justify-content: center;
+	padding: 0;
+	margin: 0;
+}
+.nav-ul > li {
+	display: block;
+	border: 2px solid transparent;
+}
+.Mail-Number > li {
+	display: block;
+	border: 2px solid transparent;
+}
+.navigation li {
+	margin: 0 5px;
+	padding: 5px 10px;
+	list-style: none;
+	color: black;
+	text-transform: uppercase;
+	font-family: "Open Sans";
+	font-size: 14px;
+	font-weight: 400;
+	border-radius: 5px;
+}
+
+.navigation a {
+	display: block;
+	text-decoration: none;
+}
+
+.navigation li:active {
+	border: 2px solid #23b7a4 !important;
+	color: #23b7a4;
+}
+
+.navigation li:hover {
+	border: 2px solid #585d64;
+	cursor: pointer;
+}
+
+main {
+	margin-left: -8px;
+	margin-right: -8px;
+	background-color: #dfe1e3;
+}
+
+//slider стрклки
+.slide {
+	.slick-next {
+		border: solid 2px #bb1219;
+		right: 10px;
+		height: 30px;
+		width: 31px;
+		padding-left: 3px;
+	}
+	.slick-prev {
+		border: solid 2px #bb1219;
+		left: 10px;
+		z-index: 100;
+		height: 30px;
+		width: 31px;
+		padding-right: 3px;
+	}
+	.slick-prev:before {
+		content: url(images/arrow-left.png) !important;
+		width: 18px;
+		height: 18px;
+	}
+
+	.slick-next:before {
+		content: url(images/arrow-right.png) !important;
+		width: 18px;
+		height: 18px;
+	}
+	.slick-active button {
+		background-color: #bb1219;
+	}
+}
+
+.slider-button-fix {
+	border: 1px solid #bb1219 !important;
+}
+.slick-dots-fix {
+	li button:before {
+		content: "" !important;
+	}
+	:hover button {
+		background: #bb1219 !important;
+	}
+	li button {
+		width: 10px !important;
+		height: 10px !important;
+	}
+}
+.slide > div img {
+	padding-left: 15px;
+	padding-right: 15px;
+}

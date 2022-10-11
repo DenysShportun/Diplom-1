@@ -1,1 +1,334 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
+.display-flex {
+  display: flex;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  row-gap: 15px;
+  padding-left: 15px;
+}
+
+.row {
+  width: 100%;
+  justify-content: space-around;
+}
+
+.display-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Mail-Number {
+  display: flex;
+}
+
+.Mail-Number > li > img {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .Mail-Number {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid #a2aab2;
+  }
+  .Mail-Number > li > img {
+    height: 25px;
+    width: 25px;
+  }
+  .nav-mobile-menu {
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 20px;
+    top: 20px;
+    right: 15px !important;
+  }
+  .nav-mobile-menu span {
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    left: 0;
+    right: 0;
+    transition: 0.25s ease-in-out;
+  }
+  .nav-mobile-menu span:nth-child(1) {
+    top: -2px;
+  }
+  .nav-mobile-menu span:nth-child(2) {
+    top: 7px;
+  }
+  .nav-mobile-menu span:nth-child(3) {
+    bottom: 3px;
+  }
+  .nav-mobile-menu.active-menu span:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+  }
+  .nav-mobile-menu.active-menu span:nth-child(2) {
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+  .nav-mobile-menu.active-menu span:nth-child(3) {
+    transform: scale(0);
+  }
+  .navigation {
+    margin-top: 5px;
+    position: fixed;
+    padding-right: 30px !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 280px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    opacity: 0;
+    visibility: hidden;
+    background-color: #c5cbd2;
+    transform: translateX(100%);
+    padding: 10px;
+    transition: 0.7s;
+  }
+  .navigation ul {
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .active-menu {
+    z-index: 100;
+    opacity: 0.85;
+    visibility: visible;
+    transform: translateX(0);
+    position: fixed;
+    border-radius: 15px 0 0 15px;
+    transition: 0.7s;
+  }
+  .active-menu span {
+    width: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .col-mobile-12 {
+    width: 100%;
+  }
+  .col-mobile-12 > h1 {
+    display: flex;
+    text-align: center;
+    font-size: 24px;
+  }
+  .col-mobile-12 > p {
+    height: 100%;
+    display: flex;
+    text-align: center;
+    font-size: 12px;
+  }
+  .slide {
+    width: 100%;
+  }
+  .slide > div img {
+    width: 320px;
+    height: 180px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .h-slider {
+    display: flex;
+    justify-content: space-between;
+  }
+  .col-tablet-8 {
+    width: 66.66667%;
+  }
+  .col-tablet-4 {
+    width: 33.33333%;
+  }
+  .col-tablet-8 > h1 {
+    margin-top: 15px;
+    text-align: start;
+    font-size: 22px;
+    padding-left: 15px;
+  }
+  .col-tablet-4 > p {
+    margin-top: 15px;
+    text-align: start;
+    font-size: 14px;
+  }
+  .slide {
+    width: 100%;
+  }
+  .slide > div img {
+    width: 768px;
+    height: 372px;
+  }
+}
+@media (min-width: 1024px) {
+  .h-slider {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .col-desk-8 {
+    width: 66.66667%;
+  }
+  .col-desk-4 {
+    width: 33.33333%;
+  }
+  .col-desk-8 > h1 {
+    margin-top: 15px;
+    text-align: start;
+    font-size: 30px;
+    padding-left: 15px;
+  }
+  .col-desk-4 > p {
+    margin-top: 15px;
+    text-align: start;
+    font-size: 16px;
+  }
+  .col-slider-12 {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .slide {
+    width: 100%;
+  }
+  .slide > div img {
+    width: 1024px;
+    height: 609px;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  width: 100%;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+header .display-flex {
+  margin-left: -8px;
+  margin-right: -8px;
+  height: 80px;
+  align-items: center;
+}
+
+.container-1 {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.navigation ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-ul > li {
+  display: block;
+  border: 2px solid transparent;
+}
+
+.Mail-Number > li {
+  display: block;
+  border: 2px solid transparent;
+}
+
+.navigation li {
+  margin: 0 5px;
+  padding: 5px 10px;
+  list-style: none;
+  color: black;
+  text-transform: uppercase;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 5px;
+}
+
+.navigation a {
+  display: block;
+  text-decoration: none;
+}
+
+.navigation li:active {
+  border: 2px solid #23b7a4 !important;
+  color: #23b7a4;
+}
+
+.navigation li:hover {
+  border: 2px solid #585d64;
+  cursor: pointer;
+}
+
+main {
+  margin-left: -8px;
+  margin-right: -8px;
+  background-color: #dfe1e3;
+}
+
+.slide .slick-next {
+  border: solid 2px #bb1219;
+  right: 10px;
+  height: 30px;
+  width: 31px;
+  padding-left: 3px;
+}
+.slide .slick-prev {
+  border: solid 2px #bb1219;
+  left: 10px;
+  z-index: 100;
+  height: 30px;
+  width: 31px;
+  padding-right: 3px;
+}
+.slide .slick-prev:before {
+  content: url(images/arrow-left.png) !important;
+  width: 18px;
+  height: 18px;
+}
+.slide .slick-next:before {
+  content: url(images/arrow-right.png) !important;
+  width: 18px;
+  height: 18px;
+}
+.slide .slick-active button {
+  background-color: #bb1219;
+}
+
+.slider-button-fix {
+  border: 1px solid #bb1219 !important;
+}
+
+.slick-dots-fix li button:before {
+  content: "" !important;
+}
+.slick-dots-fix :hover button {
+  background: #bb1219 !important;
+}
+.slick-dots-fix li button {
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.slide > div img {
+  padding-left: 15px;
+  padding-right: 15px;
+}/*# sourceMappingURL=style.css.map */

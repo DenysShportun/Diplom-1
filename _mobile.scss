@@ -1,0 +1,23 @@
+@media (max-width: 767px) {
+	.col-mobile-12 {
+		width: 100%;
+	}
+	.col-mobile-12 > h1 {
+		display: flex;
+		text-align: center;
+		font-size: 24px;
+	}
+	.col-mobile-12 > p {
+		height: 100%;
+		display: flex;
+		text-align: center;
+		font-size: 12px;
+	}
+	.slide {
+		width: 100%;
+	}
+	.slide > div img {
+		width: 320px;
+		height: 180px;
+	}
+}
