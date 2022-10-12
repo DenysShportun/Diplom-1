@@ -52,7 +52,7 @@
 		padding: 15px;
 		padding-top: 35px;
 		height: 200px;
-		border: 1px solid #bb1219;
+		border: 1px solid #a2aab2;
 		display: flex;
 		flex-direction: column;
 		gap: 30px;
@@ -65,5 +65,34 @@
 
 	.char-2 {
 		text-align: center;
+	}
+	//main-white
+	.main-white {
+		background-color: white;
+	}
+	.main-white > .container-1 {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.col-desk-12 > div > img {
+		width: 100%;
+		height: auto;
+	}
+	//container-4
+	.container-4 {
+		display: flex;
+		flex-direction: column;
+		max-width: 767px;
+		margin: 0 auto;
+	}
+	.Vavilovo > h2 {
+		text-align: center;
+	}
+	.reviews > div img {
+		width: 100%;
+		height: auto;
+	}
+	.centr-img > h1 img {
+		display: none;
 	}
 }

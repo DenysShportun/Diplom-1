@@ -6,6 +6,13 @@
 }
 @media (min-width: 1024px) {
 }
+main {
+	padding-top: 30px;
+}
+.map {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
 .row {
 	width: 100%;
 	justify-content: space-around;
@@ -110,7 +117,44 @@
 		}
 	}
 }
-.centr-img > h1 img {
-	padding: 5px;
-	padding-bottom: 10px;
+p span {
+	font-weight: bold;
+}
+.position-rel {
+	position: relative;
+}
+.play-video {
+	position: relative;
+}
+.play-video-icon {
+	position: absolute;
+	background-image: url(images/play_video_icon.png);
+	background-repeat: no-repeat;
+	width: 48px;
+	height: 48px;
+	cursor: pointer;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 50%;
+	transform: translateY(-50%);
+}
+.map {
+	max-width: 1024px;
+	width: 100%;
+}
+.map img {
+	width: 100%;
+	height: auto;
+}
+.vector {
+	position: absolute;
+	background-image: url(images/Vector.png);
+	background-repeat: no-repeat;
+	width: 37px;
+	height: 50px;
+	cursor: pointer;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 50%;
+	transform: translateY(-50%);
 }
